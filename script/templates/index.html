@@ -5,10 +5,12 @@
     <title>GitHubPageHub</title>
 </head>
 <body>
-<ul>
+{% if not all_blog %}
+暂无内容
+{% endif %}
+
 {% for blog in all_blog %}
   <li><a href="{{ blog.url }}">{{ blog.name }}（{{ blog.speed}}）</a>, tags: {{ '|'.join(blog.tags) }}</li>
 {% endfor %}
-</ul>
 </body>
 </html>
