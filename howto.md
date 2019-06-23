@@ -12,7 +12,7 @@
 ```
 begin
 url（地址）:
-name_prefix = 'name（名称）:' 
+name（名称）: 
 description（描述）:
 tag（标签）:
 end
