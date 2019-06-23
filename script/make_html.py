@@ -54,7 +54,9 @@ def parse_blog(content):
                     blog_item['tags'].append(fi_tag)
 
         if is_end is True:
-            blog_item['speed'] = get_load_time(blog_item.get('url'))
+            speed = get_load_time(blog_item.get('url'))
+            if speed != -1:
+                blog_item['speed'] = speed
             blog_list.append(blog_item)
             is_begin = False
             is_end = False

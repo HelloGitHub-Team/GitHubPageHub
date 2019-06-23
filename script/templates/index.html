@@ -10,7 +10,7 @@
 {% endif %}
 
 {% for blog in all_blog %}
-  <li><a href="{{ blog.url }}">{{ blog.name }}（{{ blog.speed}}）</a>, tags: {{ '|'.join(blog.tags) }}</li>
+    <li><a href="{{ blog.url }}">{{ blog.name }}（{{ blog.speed}}）</a>, tags: {{ '|'.join(blog.tags) }}</li>
 {% endfor %}
 </body>
 </html>
