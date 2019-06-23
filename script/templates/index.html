@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHubPageHub</title>
+</head>
+<body>
+<ul>
+{% for blog in all_blog %}
+  <li><a href="{{ blog.url }}">{{ blog.name }}（{{ blog.speed}}）</a>, tags: {{ '|'.join(blog.tags) }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
