@@ -1,16 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GitHubPageHub</title>
 </head>
-<body>
-{% if not all_blog %}
-暂无内容
-{% endif %}
+<style>
+    .hg-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+        margin: 10px auto;
+        align-items: center;
+    }
 
-{% for blog in all_blog %}
-    <li><a href="{{ blog.url }}">{{ blog.name }}（{{ blog.speed}}）</a>, tags: {{ '|'.join(blog.tags) }}</li>
-{% endfor %}
+    .hg-githubpage-blog-wrapper {
+        display: flex;
+        width: 90%;
+        border: 1px solid #d9d9d9;
+        padding: 1rem;
+        border-radius: .1875rem;
+        flex-direction: column;
+    }
+
+    .hg-githubpage-blog-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hg-blog-content {
+        display: block;
+    }
+
+    .hg-blog-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .hg-blog-link {
+        text-decoration: none;
+    }
+
+    .hg-blog-link:hover {
+        cursor: pointer;
+    }
+
+    .hg-blog-tag-list {
+        list-style: none;
+    }
+
+    .hg-blog-tag-li {
+        float:left;
+        line-height: 1.25rem;
+        text-decoration: none;
+        margin-left: .75rem;
+    }
+
+    .hg-blog-tag-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: .75rem;
+        padding: .5rem;
+        color: #000000;
+        border-radius: .1875rem;
+        border: .0625rem solid #d9d9d9;
+        margin-left: 10px;
+        background-color: #fafafa;
+    }
+
+    .hg-githubpage-blog-desc {
+        font-size: .875rem;
+    }
+</style>
+
+<body>
+    <div class="hg-wrapper">
+        {% for blog in all_blog %}
+            <div class="hg-githubpage-blog-wrapper">
+                <div class="hg-githubpage-blog-content">
+                    <a class='hg-blog-link' href="{{ blog.url }}"><span class="hg-blog-content hg-blog-title">{{ blog.name }}</span></a>
+                    <ul class="hg-blog-tag-list">
+                        {% for tag in blog.tags %}
+                            <li class="hg-blog-tag-li">
+                                <div class="hg-blog-tag-wrapper">{{ tag }}</div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="hg-githubpage-blog-desc">
+                    <p>{{ blog.desc }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
 </body>
 </html>
