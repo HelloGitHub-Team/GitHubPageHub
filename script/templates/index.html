@@ -8,6 +8,11 @@
     <title>GitHubPageHub</title>
 </head>
 <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
     .hg-wrapper {
         display: flex;
         flex-direction: column;
@@ -19,6 +24,7 @@
     .hg-githubpage-blog-wrapper {
         display: flex;
         width: 90%;
+        height: 7.75rem;
         border: 1px solid #d9d9d9;
         padding: 1rem;
         border-radius: .1875rem;
@@ -33,6 +39,11 @@
 
     .hg-blog-content {
         display: block;
+    }
+
+    .mgl15 {
+        margin-left: 1.25rem;
+        ;
     }
 
     .hg-blog-title {
@@ -53,7 +64,7 @@
     }
 
     .hg-blog-tag-li {
-        float:left;
+        float: left;
         line-height: 1.25rem;
         text-decoration: none;
         margin-left: .75rem;
@@ -75,28 +86,62 @@
     .hg-githubpage-blog-desc {
         font-size: .875rem;
     }
+
+    .hg-blog-banner-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 17.5rem;
+        background: #1965eC;
+        color: #fafafa;
+    }
+
+    .hg-blog-banner-title {
+        font-size: 1.75rem;
+    }
+
+    .hg-blog-banner-subtitle {
+        display: block;
+        font-size: 1.25rem;
+    }
+
+    .hg-blog-desc-content {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
 </style>
 
 <body>
+    <header class="hg-blog-banner-wrapper">
+        <span class="hg-blog-banner-title">分享，连接</span>
+        <span class="hg-blog-banner-subtitle">你不是一个人在写博客</span>
+    </header>
     <div class="hg-wrapper">
         {% for blog in all_blog %}
-            <div class="hg-githubpage-blog-wrapper">
-                <div class="hg-githubpage-blog-content">
-                    <a class='hg-blog-link' href="{{ blog.url }}"><span class="hg-blog-content hg-blog-title">{{ blog.name }}</span></a>
-                    <ul class="hg-blog-tag-list">
-                        {% for tag in blog.tags %}
-                            <li class="hg-blog-tag-li">
-                                <div class="hg-blog-tag-wrapper">{{ tag }}</div>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="hg-githubpage-blog-desc">
-                    <p>{{ blog.desc }}</p>
-                </div>
+        <div class="hg-githubpage-blog-wrapper">
+            <div class="hg-githubpage-blog-content">
+                <a class='hg-blog-link' href="{{ blog.url }}"><span class="hg-blog-content hg-blog-title">{{ blog.name
+                        }}</span></a>
+                <ul class="hg-blog-tag-list">
+                    {% for tag in blog.tags %}
+                    <li class="hg-blog-tag-li">
+                        <div class="hg-blog-tag-wrapper">{{ tag }}</div>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
+            <div class="hg-githubpage-blog-desc">
+                <p>{{ blog.desc }}</p>
+            </div>
+        </div>
         {% endfor %}
     </div>
 
 </body>
+
 </html>
