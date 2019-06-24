@@ -25,3 +25,10 @@ name（名称）: 运维咖啡吧
 description（描述）: 追求技术的道路上，我从不曾停下脚步
 tag（标签）: 数据库|服务器|架构|运维|云计算/大数据
 end
+
+begin
+url（地址）: https://kuricat.com/
+name（名称）: Kurisu's Blog
+description（描述）: Just Try
+tag（标签）: 算法/数据结构|后端|服务器
+end
