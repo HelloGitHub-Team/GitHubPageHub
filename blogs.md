@@ -43,5 +43,5 @@ begin
 url（地址）: https://kuricat.com/
 name（名称）: Kurisu's_Blog
 description（描述）: Just_Try
-tag（标签）: 算法/数据结构|后端|服务器
+tag（标签）: 算法/数据结构|后端|服务器|编程语言
 end
