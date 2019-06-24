@@ -69,7 +69,7 @@ def get_load_time(blog_url):
     检测记录的 blog 访问速度，-1 为超时
     """
     try:
-        response = requests.get(blog_url, timeout=15)
+        response = requests.get(blog_url, verify=False, timeout=15)
         speed_seconds = response.elapsed.total_seconds()
     except Exception as e:
         print(e)
