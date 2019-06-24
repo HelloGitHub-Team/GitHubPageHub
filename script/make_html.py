@@ -96,5 +96,7 @@ def make_html(html_file_name, all_blog_data, output_file_path):
 
 
 if __name__ == '__main__':
-    all_blog_data = read_blog_data(file_path='../blogs.md')
-    make_html('index.html', all_blog_data, '../index.html')
+    blog_data_file_path = os.path.join(
+        os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'blogs.md')
+    # all_blog_data = read_blog_data(file_path=)
+    # make_html('index.html', all_blog_data, '../index.html')
