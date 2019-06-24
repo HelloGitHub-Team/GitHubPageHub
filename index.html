@@ -2,13 +2,166 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://hellogithub.com/favicon.ico">
     <title>GitHubPageHub</title>
 </head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .hg-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+        margin: 10px auto;
+        align-items: center;
+    }
+
+    .hg-githubpage-blog-wrapper {
+        display: flex;
+        width: 90%;
+        height: 7.75rem;
+        border: 1px solid #d9d9d9;
+        padding: 1rem;
+        border-radius: .1875rem;
+        flex-direction: column;
+        max-width: 62.5rem;
+        box-shadow: 0px 5px 6px #666666;
+        -moz-box-shadow: 0px 5px 6px#666666;
+        -webkit-box-shadow: 0px 5px 6px #666666;
+        margin-bottom: 2.25rem;
+    }
+
+    .hg-githubpage-blog-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hg-blog-content {
+        display: block;
+    }
+
+    .mgl15 {
+        margin-left: 1.25rem;
+        ;
+    }
+
+    .hg-blog-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .hg-blog-link {
+        text-decoration: none;
+    }
+
+    .hg-blog-link:hover {
+        cursor: pointer;
+    }
+
+    .hg-blog-tag-list {
+        list-style: none;
+    }
+
+    .hg-blog-tag-li {
+        float:left;
+        line-height: 1.25rem;
+        text-decoration: none;
+        margin-left: .75rem;
+    }
+
+    .hg-blog-tag-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: .75rem;
+        padding: .5rem;
+        color: #000000;
+        border-radius: .1875rem;
+        border: .0625rem solid #d9d9d9;
+        margin-left: 10px;
+        background-color: #fafafa;
+    }
+
+    .hg-githubpage-blog-desc {
+        font-size: .875rem;
+    }
+
+    .hg-blog-banner-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 17.5rem;
+        background: #1965eC;
+        color: #fafafa;
+        box-shadow: 0px 5px 6px #666666;
+        -moz-box-shadow: 0px 5px 6px#666666;
+        -webkit-box-shadow: 0px 5px 6px #666666;
+    }
+
+    .hg-blog-banner-title {
+        font-size: 1.75rem;
+    }
+    
+    .hg-blog-banner-subtitle {
+        display: block;
+        font-size: 1.25rem;
+    }
+
+    .hg-blog-desc-content {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .hg-logo {
+        width: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+</style>
+
 <body>
-
-暂无内容
-
-
+    <header class="hg-blog-banner-wrapper">
+        <img class="hg-logo" src="./assets/hg-logo.png" />
+        <span class="hg-blog-banner-title">分享，连接</span>
+        <span class="hg-blog-banner-subtitle">你不是一个人在写博客</span>
+    </header>
+    <div class="hg-wrapper">
+        
+        <div class="hg-githubpage-blog-wrapper">
+            <div class="hg-githubpage-blog-content">
+                <a class='hg-blog-link' href="https://chungzh.cn/"><span class="hg-blog-content hg-blog-title">ChungZH's Blog</span></a>
+                <ul class="hg-blog-tag-list">
+                    
+                    <li class="hg-blog-tag-li">
+                        <div class="hg-blog-tag-wrapper">算法/数据结构</div>
+                    </li>
+                    
+                    <li class="hg-blog-tag-li">
+                        <div class="hg-blog-tag-wrapper">OI/ACM</div>
+                    </li>
+                    
+                    <li class="hg-blog-tag-li">
+                        <div class="hg-blog-tag-wrapper">编程语言</div>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="hg-githubpage-blog-desc">
+                <p>ChungZH 的小站</p>
+            </div>
+        </div>
+        
+    </div>
 
 </body>
+
 </html>
