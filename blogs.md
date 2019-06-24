@@ -32,3 +32,10 @@ name（名称）: TK.Storm
 description（描述）: 死亡即开始，当下即永恒
 tag（标签）: 服务器|架构|运维|编程语言|算法/数据结构
 end
+
+begin
+url（地址）: https://shizuri.net
+name（名称）:  静之森
+description（描述）: 致虚极、守静笃。
+tag（标签）: 生活|思考|人生|大学生活
+end
