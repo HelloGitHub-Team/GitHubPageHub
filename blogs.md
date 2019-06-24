@@ -41,8 +41,8 @@ tag（标签）: 生活|思考|人生|大学生活
 end
 
 begin
-url（地址）: http://houkensjtu.github.io/
-name（名称）:  Geekhead
-description（描述）: Be real.
-tag（标签）: 编程语言|物理|读书|英语学习
+url（地址）: http://houkensjtu.github.io
+name（名称）: Geekhead
+description（描述）: Be real
+tag（标签）: 编程语言|人工智能|算法/数据结构
 end
