@@ -9,7 +9,7 @@ begin
 url（地址）: https://www.desgard.com/
 name（名称）: Guardia · 瓜地
 description（描述）: 冬瓜的博客
-tag（标签）: iOS/客户端/算法
+tag（标签）: iOS|客户端|算法
 end
 
 begin
