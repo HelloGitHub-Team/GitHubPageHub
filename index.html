@@ -8,9 +8,15 @@
     <title>GitHubPageHub</title>
 </head>
 <style>
+    @font-face {
+        font-family: mFont;
+        src: url('./assets/font/MicrosoftYaqiHeiLight-2.ttf');
+    }
     body {
         margin: 0;
         padding: 0;
+        /* background-color: #F0F3FA; */
+        font-family: 'mFont';
     }
     .hg-wrapper {
         display: flex;
@@ -18,18 +24,16 @@
         width: 99%;
         margin: 10px auto;
         align-items: center;
+        
     }
 
     .hg-githubpage-blog-wrapper {
         width: 90%;
         position: relative;
-        border: 1px solid #d9d9d9;
+        border: .125rem solid #d9d9d9;
         padding: 1rem;
         border-radius: .1875rem;
         max-width: 62.5rem;
-        box-shadow: 0px 5px 6px #666666;
-        -moz-box-shadow: 0px 5px 6px#666666;
-        -webkit-box-shadow: 0px 5px 6px #666666;
         margin-bottom: 2.25rem;
     }
 
@@ -54,6 +58,8 @@
 
     .hg-blog-link {
         text-decoration: none;
+        font-weight: 700;
+        width: 90%;
     }
 
     .hg-blog-link:hover {
@@ -69,6 +75,7 @@
         line-height: 1.25rem;
         text-decoration: none;
         margin-left: .75rem;
+        margin-top: .625rem;
     }
 
     .hg-blog-tag-wrapper {
@@ -86,6 +93,7 @@
 
     .hg-githubpage-blog-desc {
         font-size: .875rem;
+        color: #627095;
     }
 
     .hg-blog-banner-wrapper {
@@ -97,9 +105,6 @@
         height: 17.5rem;
         background: #1965eC;
         color: #fafafa;
-        box-shadow: 0px 5px 6px #666666;
-        -moz-box-shadow: 0px 5px 6px#666666;
-        -webkit-box-shadow: 0px 5px 6px #666666;
     }
 
     .hg-blog-banner-title {
@@ -123,6 +128,28 @@
         width: 3.5rem;
         margin-bottom: 1.5rem;
     }
+
+    .hg-commit-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 13.125rem;
+        height: 50px;
+        background-color: #eeeeee;
+        border-radius: 33px;
+        background-color: ;
+        color: #eeeeee;
+        margin-top: 20px;
+        /* font-size: 8px; */
+    }
+
+    .hg-commit-content {
+        display: block;
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: #1965eC;
+        font-size: 17px;
+    }
 </style>
 
 <body>
@@ -130,7 +157,9 @@
         <img class="hg-logo" src="./assets/hg-logo.png" />
         <span class="hg-blog-banner-title">分享，连接</span>
         <span class="hg-blog-banner-subtitle">你不是一个人在写博客</span>
-        <a class="hg-blog-banner-subtitle" href="https://github.com/HelloGitHub-Team/GitHubPageHub/blob/master/script/howto.md">点击提交你的 blog</a>
+        <div class="hg-commit-btn">
+            <a class="hg-commit-content" href="https://github.com/HelloGitHub-Team/GitHubPageHub/blob/master/script/howto.md">点击提交你的 blog</a>
+        </div>
     </header>
     <div class="hg-wrapper">
         
