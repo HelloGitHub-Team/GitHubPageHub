@@ -39,3 +39,10 @@ name（名称）:  静之森
 description（描述）: 致虚极、守静笃。
 tag（标签）: 生活|思考|人生|大学生活
 end
+
+begin
+url（地址）: https://www.bitlogs.tech/
+name（名称）:  Cloud Strife 
+description（描述）: Make The World A Better Place
+tag（标签）: tech|后端|golang
+end
