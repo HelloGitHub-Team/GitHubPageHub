@@ -51,7 +51,8 @@ def parse_blog(content):
                 tags = line.replace(tag_prefix, '').strip()
                 tag_list = tags.split('|')
                 for fi_tag in tag_list:
-                    blog_item['tags'].append(fi_tag)
+                    if fi_tag in all_tag:
+                        blog_item['tags'].append(fi_tag)
 
         if is_end is True:
             speed = get_load_time(blog_item.get('url'))
