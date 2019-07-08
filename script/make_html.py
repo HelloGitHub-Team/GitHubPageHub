@@ -5,6 +5,7 @@
 #   Date    :   19/06/23 下午1:44
 #   Desc    :
 import os
+import json
 
 import requests
 from jinja2 import Environment, FileSystemLoader
@@ -100,10 +101,18 @@ def make_html(html_file_name, all_blog_data, output_file_path):
         fb.write(template.render(all_blog=all_blog_data).encode('utf-8'))
 
 
+def make_json(all_blog_data, output_file_path):
+    with open(output_file_path, 'w+') as fb:
+        json.dump(all_blog_data, fb, ensure_ascii=True)
+
+
 if __name__ == '__main__':
     blog_data_file_path = os.path.join(
         os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'blogs.md')
     all_blog_data = read_blog_data(file_path=blog_data_file_path)
     index_file_path = os.path.join(
         os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'index.html')
-    make_html('index.html', all_blog_data, index_file_path)
+    json_file_path = os.path.join(
+        os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'datat.json')
+    make_json(all_blog_data, json_file_path)
+    # make_html('index.html', all_blog_data, index_file_path)
