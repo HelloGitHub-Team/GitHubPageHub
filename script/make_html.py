@@ -22,6 +22,7 @@ all_tag = [
 
 def parse_blog(content):
     blog_list = []
+    blog_url_set = set()
     begin_flag = 'begin'
     end_flag = 'end'
     is_begin = False
@@ -47,18 +48,21 @@ def parse_blog(content):
                 if name:
                     blog_item['name'] = name
             elif line.startswith(tag_prefix):
-                blog_item['tags'] = []
+                blog_item['tags'] = set()
                 tags = line.replace(tag_prefix, '').strip()
                 tag_list = tags.split('|')
                 for fi_tag in tag_list:
                     if fi_tag in all_tag:
-                        blog_item['tags'].append(fi_tag)
+                        blog_item['tags'].add(fi_tag)
 
         if is_end is True:
             speed = get_load_time(blog_item.get('url'))
             if speed != -1:
                 blog_item['speed'] = speed
-            blog_list.append(blog_item)
+                if blog_item['url'] not in blog_url_set:
+                    blog_url_set.add(blog_item['url'])
+                    blog_item['tags'] = list(blog_item['tags'])
+                    blog_list.append(blog_item)
             is_begin = False
             is_end = False
             blog_item = {}
