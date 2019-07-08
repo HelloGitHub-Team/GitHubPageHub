@@ -102,8 +102,8 @@ def make_html(html_file_name, all_blog_data, output_file_path):
 
 
 def make_json(all_blog_data, output_file_path):
-    with open(output_file_path, 'w+') as fb:
-        json.dump(all_blog_data, fb, ensure_ascii=True)
+    with open(output_file_path, 'w+', encoding='utf-8') as fb:
+        json.dump(all_blog_data, fb, ensure_ascii=False)
 
 
 if __name__ == '__main__':
