@@ -7,4 +7,4 @@ script: python script/make_html.py
 after_success:
   - git add .
   - git commit -m'add blogs'
-  - git push
+  - git push origin HEAD:master
