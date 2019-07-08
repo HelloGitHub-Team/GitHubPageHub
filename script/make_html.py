@@ -43,7 +43,7 @@ def parse_blog(content):
             elif line.startswith(desc_prefix):
                 desc = line.replace(desc_prefix, '').strip()
                 if desc:
-                    blog_item['desc'] = desc
+                    blog_item['desc'] = desc[:100]
             elif line.startswith(name_prefix):
                 name = line.replace(name_prefix, '').strip()
                 if name:
@@ -113,6 +113,6 @@ if __name__ == '__main__':
     index_file_path = os.path.join(
         os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'index.html')
     json_file_path = os.path.join(
-        os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'datat.json')
+        os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'data.json')
     make_json(all_blog_data, json_file_path)
     # make_html('index.html', all_blog_data, index_file_path)
