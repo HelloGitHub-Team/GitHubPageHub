@@ -8,9 +8,3 @@ after_success:
   - git add .
   - git commit -m'add blogs'
   - git push
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  on:
-    branch: master
