@@ -53,3 +53,10 @@ name（名称）: Lenix Blog
 description（描述）:记录－交流－分享
 tag（标签）: 前端|后端|数据库|服务器|编程语言|架构|运维|物联网
 end
+
+begin
+url（地址）: https://cmcncm.cn/
+name（名称）: 庄七
+description（描述）:以善眼望世界
+tag（标签）: 思考|区块链
+end
