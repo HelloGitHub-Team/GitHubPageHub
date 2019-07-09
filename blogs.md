@@ -1,7 +1,3 @@
-
-
-
-
 begin
 url（地址）: https://chungzh.cn/
 name（名称）: ChungZH's Blog
@@ -13,21 +9,21 @@ begin
 url（地址）: https://www.desgard.com/
 name（名称）: Guardia · 瓜地
 description（描述）: 冬瓜的博客
-tag（标签）: iOS|客户端|算法
+tag（标签）: iOS|客户端|算法/数据结构
 end
 
 begin
 url（地址）: https://www.jefsky.com
 name（名称）: 程序猿甜品店
 description（描述）: 代码不一定每天都能写好，但人生每一天都要活好
-tag（标签）: 前端|后端|数据库|服务器|编程语言
+tag（标签）: 前端|后端|数据库
 end
 
 begin
 url（地址）: https://ops-coffee.cn/
 name（名称）: 运维咖啡吧
 description（描述）: 追求技术的道路上，我从不曾停下脚步
-tag（标签）: 数据库|服务器|架构|运维|云计算/大数据
+tag（标签）: 数据库|服务器|架构|运维
 end
 
 begin
@@ -56,4 +52,18 @@ url（地址）: https://blog.p2hp.com
 name（名称）: Lenix Blog
 description（描述）:记录－交流－分享
 tag（标签）: 前端|后端|数据库|服务器|编程语言|架构|运维|物联网
+end
+
+begin
+url（地址）: https://cmcncm.cn/
+name（名称）: 庄七
+description（描述）:以善眼望世界
+tag（标签）: 思考|区块链
+end
+
+begin
+url（地址）: http://houkensjtu.github.io/
+name（名称）: Geekhead
+description（描述）:Be real.
+tag（标签）:编程语言|人工智能|思考
 end
