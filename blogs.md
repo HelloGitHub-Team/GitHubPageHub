@@ -68,3 +68,10 @@ name（名称）: Geekhead
 description（描述）:Be real.
 tag（标签）:编程语言|人工智能|思考
 end
+
+begin
+url（地址）:https://github.laiczhang.com
+name（名称）: Laic Zhang の Blog
+description（描述）:做一件好事。
+tag（标签）:算法/数据结构|OI/ACM|前端|编程语言|思考
+end
