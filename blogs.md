@@ -76,3 +76,9 @@ description（描述）: Knowing is owning...
 tag（标签）: 算法|人工智能|论文笔记
 end
 
+begin
+url（地址）: http://github.laiczhang.com
+name（名称）: laic zhang の Blog
+description（描述）: Do a good thing.
+tag（标签）: 算法|人工智能|思考
+end
