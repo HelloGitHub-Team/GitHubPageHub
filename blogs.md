@@ -68,3 +68,11 @@ name（名称）: Geekhead
 description（描述）:Be real.
 tag（标签）:编程语言|人工智能|思考
 end
+
+begin
+url（地址）: http://chenfeiyang.top
+name（名称）: Feiyang Chen's Blogs
+description（描述）: Knowing is owning...
+tag（标签）: 算法|人工智能|论文笔记
+end
+
