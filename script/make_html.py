@@ -113,6 +113,6 @@ if __name__ == '__main__':
     index_file_path = os.path.join(
         os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'index.html')
     json_file_path = os.path.join(
-        os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'data.json')
+        os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'build/data.json')
     make_json(all_blog_data, json_file_path)
     # make_html('index.html', all_blog_data, index_file_path)
