@@ -14,7 +14,7 @@ matrix:
       install:
         - npm install
       script:
-        - npm run-script build
+        - npm run build
 
 deploy:
   provider: pages
