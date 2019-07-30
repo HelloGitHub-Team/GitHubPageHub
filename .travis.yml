@@ -8,7 +8,7 @@ matrix:
       script: python script/make_html.py
     - language: node_js
       node_js:
-        - 10.0.16
+        - 10.16.0
       before_install:
         - cd hg-app
       install:
