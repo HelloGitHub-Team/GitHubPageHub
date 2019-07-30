@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/GitHubPageHub/static/css/main.8a96d73e.chunk.css",
-    "main.js": "/GitHubPageHub/static/js/main.465379dc.chunk.js",
-    "main.js.map": "/GitHubPageHub/static/js/main.465379dc.chunk.js.map",
-    "runtime~main.js": "/GitHubPageHub/static/js/runtime~main.46e5848f.js",
-    "runtime~main.js.map": "/GitHubPageHub/static/js/runtime~main.46e5848f.js.map",
-    "static/css/2.46439c26.chunk.css": "/GitHubPageHub/static/css/2.46439c26.chunk.css",
-    "static/js/2.8cc28d68.chunk.js": "/GitHubPageHub/static/js/2.8cc28d68.chunk.js",
-    "static/js/2.8cc28d68.chunk.js.map": "/GitHubPageHub/static/js/2.8cc28d68.chunk.js.map",
-    "index.html": "/GitHubPageHub/index.html",
-    "precache-manifest.c2f90dacfc057851a20c844243cd2765.js": "/GitHubPageHub/precache-manifest.c2f90dacfc057851a20c844243cd2765.js",
-    "service-worker.js": "/GitHubPageHub/service-worker.js",
-    "static/css/2.46439c26.chunk.css.map": "/GitHubPageHub/static/css/2.46439c26.chunk.css.map",
-    "static/css/main.8a96d73e.chunk.css.map": "/GitHubPageHub/static/css/main.8a96d73e.chunk.css.map"
+    "main.css": "/node-wiki/build/static/css/main.8a96d73e.chunk.css",
+    "main.js": "/node-wiki/build/static/js/main.19873c92.chunk.js",
+    "main.js.map": "/node-wiki/build/static/js/main.19873c92.chunk.js.map",
+    "runtime~main.js": "/node-wiki/build/static/js/runtime~main.22d82967.js",
+    "runtime~main.js.map": "/node-wiki/build/static/js/runtime~main.22d82967.js.map",
+    "static/css/2.46439c26.chunk.css": "/node-wiki/build/static/css/2.46439c26.chunk.css",
+    "static/js/2.8cc6f53a.chunk.js": "/node-wiki/build/static/js/2.8cc6f53a.chunk.js",
+    "static/js/2.8cc6f53a.chunk.js.map": "/node-wiki/build/static/js/2.8cc6f53a.chunk.js.map",
+    "index.html": "/node-wiki/build/index.html",
+    "precache-manifest.cafa43a18c07471895ebcb7f541e8a58.js": "/node-wiki/build/precache-manifest.cafa43a18c07471895ebcb7f541e8a58.js",
+    "service-worker.js": "/node-wiki/build/service-worker.js",
+    "static/css/2.46439c26.chunk.css.map": "/node-wiki/build/static/css/2.46439c26.chunk.css.map",
+    "static/css/main.8a96d73e.chunk.css.map": "/node-wiki/build/static/css/main.8a96d73e.chunk.css.map"
   }
 }
