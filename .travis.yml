@@ -1,9 +1,20 @@
-language: python
-python:
-  - '3.6'
-install:
-  - pip install -r requirements.txt
-script: python script/make_html.py
+matrix:
+  include:
+    - language: python
+      python:
+        - '3.6'
+      install:
+        - pip install -r requirements.txt
+      script: python script/make_html.py
+    - language: node_js
+      node_js:
+        - 10.16.0
+      before_install:
+        - cd hg-app
+      install:
+        - npm install
+      script:
+        - npm run-script build
 
 deploy:
   provider: pages

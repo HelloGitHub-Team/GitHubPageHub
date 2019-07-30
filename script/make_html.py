@@ -76,7 +76,7 @@ def get_load_time(blog_url):
     """
     try:
         response = requests.get(blog_url, verify=False, timeout=15)
-        speed_seconds = response.elapsed.total_seconds()
+        speed_seconds = round(response.elapsed.total_seconds(), 3)
     except Exception as e:
         print(e)
         speed_seconds = -1
@@ -113,6 +113,6 @@ if __name__ == '__main__':
     index_file_path = os.path.join(
         os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'index.html')
     json_file_path = os.path.join(
-        os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'build/data.json')
+        os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'data.json')
     make_json(all_blog_data, json_file_path)
     # make_html('index.html', all_blog_data, index_file_path)
