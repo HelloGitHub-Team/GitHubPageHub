@@ -76,7 +76,7 @@ def get_load_time(blog_url):
     """
     try:
         response = requests.get(blog_url, verify=False, timeout=15)
-        speed_seconds = response.elapsed.total_seconds()
+        speed_seconds = round(response.elapsed.total_seconds(), 3)
     except Exception as e:
         print(e)
         speed_seconds = -1
