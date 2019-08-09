@@ -7,6 +7,7 @@
 import os
 import json
 import shutil
+import time
 
 import requests
 from jinja2 import Environment, FileSystemLoader
@@ -111,16 +112,19 @@ def move_build_file(build_file_name='build'):
     build_path = os.path.join(
         os.path.abspath(os.path.dirname(os.path.dirname(__file__))),
         'hg-app/{}'.format(build_file_name))
-    if os.path.exists(build_path):
-        content_path_list = os.listdir(build_path)
-        for content_path in content_path_list:
-            shutil.move(
-                os.path.join(os.path.abspath(
-                    os.path.dirname(os.path.dirname(__file__))),
-                    'hg-app/{}/{}'.format(build_file_name, content_path)),
-                os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-    
-    
+    while 1:
+        if os.path.exists(build_path):
+            content_path_list = os.listdir(build_path)
+            for content_path in content_path_list:
+                shutil.move(
+                    os.path.join(os.path.abspath(
+                        os.path.dirname(os.path.dirname(__file__))),
+                        'hg-app/{}/{}'.format(build_file_name, content_path)),
+                    os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
+            break
+        time.sleep(10)
+
+
 if __name__ == '__main__':
     move_build_file()
     blog_data_file_path = os.path.join(
