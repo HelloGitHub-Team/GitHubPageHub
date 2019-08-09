@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/GitHubPageHub/static/css/main.8a96d73e.chunk.css",
+    "main.js": "/GitHubPageHub/static/js/main.fed42bee.chunk.js",
+    "main.js.map": "/GitHubPageHub/static/js/main.fed42bee.chunk.js.map",
+    "runtime~main.js": "/GitHubPageHub/static/js/runtime~main.46e5848f.js",
+    "runtime~main.js.map": "/GitHubPageHub/static/js/runtime~main.46e5848f.js.map",
+    "static/css/2.46439c26.chunk.css": "/GitHubPageHub/static/css/2.46439c26.chunk.css",
+    "static/js/2.8cc28d68.chunk.js": "/GitHubPageHub/static/js/2.8cc28d68.chunk.js",
+    "static/js/2.8cc28d68.chunk.js.map": "/GitHubPageHub/static/js/2.8cc28d68.chunk.js.map",
+    "index.html": "/GitHubPageHub/index.html",
+    "precache-manifest.65e9140f135346f0de7cc79c5f5c9b15.js": "/GitHubPageHub/precache-manifest.65e9140f135346f0de7cc79c5f5c9b15.js",
+    "service-worker.js": "/GitHubPageHub/service-worker.js",
+    "static/css/2.46439c26.chunk.css.map": "/GitHubPageHub/static/css/2.46439c26.chunk.css.map",
+    "static/css/main.8a96d73e.chunk.css.map": "/GitHubPageHub/static/css/main.8a96d73e.chunk.css.map"
+  }
+}
