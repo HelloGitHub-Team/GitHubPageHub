@@ -6,6 +6,7 @@
 #   Desc    :
 import os
 import json
+import shutil
 
 import requests
 from jinja2 import Environment, FileSystemLoader
@@ -106,13 +107,29 @@ def make_json(all_blog_data, output_file_path):
         json.dump(all_blog_data, fb, ensure_ascii=False)
 
 
+def move_build_file(build_file_name='build'):
+    build_path = os.path.join(
+        os.path.abspath(os.path.dirname(os.path.dirname(__file__))),
+        'hg-app/{}'.format(build_file_name))
+    if os.path.exists(build_path):
+        content_path_list = os.listdir(build_path)
+        for content_path in content_path_list:
+            shutil.move(
+                os.path.join(os.path.abspath(
+                    os.path.dirname(os.path.dirname(__file__))),
+                    'hg-app/{}/{}'.format(build_file_name, content_path)),
+                os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
+    
+    
 if __name__ == '__main__':
+    move_build_file()
     blog_data_file_path = os.path.join(
         os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'blogs.md')
     all_blog_data = read_blog_data(file_path=blog_data_file_path)
-    index_file_path = os.path.join(
-        os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'index.html')
     json_file_path = os.path.join(
         os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'data.json')
     make_json(all_blog_data, json_file_path)
+    # index_file_path = os.path.join(
+    #     os.path.abspath(os.path.dirname(os.path.dirname(__file__))),
+    #     'index.html')
     # make_html('index.html', all_blog_data, index_file_path)
