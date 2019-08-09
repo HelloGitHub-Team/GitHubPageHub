@@ -112,21 +112,18 @@ def move_build_file(build_file_name='build'):
     build_path = os.path.join(
         os.path.abspath(os.path.dirname(os.path.dirname(__file__))),
         'hg-app/{}'.format(build_file_name))
-    while 1:
-        if os.path.exists(build_path):
-            content_path_list = os.listdir(build_path)
-            for content_path in content_path_list:
-                shutil.move(
-                    os.path.join(os.path.abspath(
-                        os.path.dirname(os.path.dirname(__file__))),
-                        'hg-app/{}/{}'.format(build_file_name, content_path)),
-                    os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-            break
-        time.sleep(10)
+    if os.path.exists(build_path):
+        content_path_list = os.listdir(build_path)
+        for content_path in content_path_list:
+            shutil.move(
+                os.path.join(os.path.abspath(
+                    os.path.dirname(os.path.dirname(__file__))),
+                    'hg-app/{}/{}'.format(build_file_name, content_path)),
+                os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 
 
 if __name__ == '__main__':
-    move_build_file()
+    # move_build_file()
     blog_data_file_path = os.path.join(
         os.path.abspath(os.path.dirname(os.path.dirname(__file__))), 'blogs.md')
     all_blog_data = read_blog_data(file_path=blog_data_file_path)
