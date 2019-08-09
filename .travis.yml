@@ -9,18 +9,17 @@ matrix:
         - npm install
       script:
         - npm run build
-        - cd ..
-        - python script/make_html.py
+        - sh ./mv.sh
     - language: python
       python:
         - '3.6'
       install:
         - pip install -r requirements.txt
+      script: python script/make_html.py
 
 deploy:
   provider: pages
   skip_cleanup: true
-  local_dir: hg-app/build
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
   on:
