@@ -1,5 +1,10 @@
 matrix:
   include:
+    - language: python
+      python:
+        - '3.6'
+      install:
+        - pip install -r requirements.txt
     - language: node_js
       node_js:
         - 10.16.0
@@ -9,12 +14,8 @@ matrix:
         - npm install
       script:
         - npm run build
-    - language: python
-      python:
-        - '3.6'
-      install:
-        - pip install -r requirements.txt
-      script: python script/make_html.py
+        - python script/make_html.py
+
 
 deploy:
   provider: pages
