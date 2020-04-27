@@ -82,3 +82,10 @@ name（名称）: laic zhang の Blog
 description（描述）: Do a good thing.
 tag（标签）: 算法|人工智能|思考
 end
+
+begin
+url（地址）: https://royce2003.top/
+name（名称）: Royce's Blog
+description（描述）: Royce 的小窝
+tag（标签）: OI/ACM|算法/数据结构|编程语言
+end
