@@ -89,3 +89,11 @@ name（名称）: Royce's Blog
 description（描述）: Royce 的小窝
 tag（标签）: OI/ACM|算法/数据结构|编程语言
 end
+
+begin
+url（地址）: https://aeilot.github.io/blog
+name（名称）: Louis Aeilot's Blog
+description（描述）: Stay Hungry. Stay Foolish.
+tag（标签）: OI/ACM|算法/数据结构|Android|iOS|编程语言
+end
+
