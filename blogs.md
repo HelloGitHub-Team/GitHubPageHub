@@ -101,5 +101,5 @@ begin
 url（地址）: https://blog.pi-dal.com
 name（名称）: pi-dal-blog
 description（描述）: pi-dal的个人博客
-tag（标签）: 前端/后端/iOS/物理/数学/日记
+tag（标签）: 前端|后端|iOS|物理|数学|日记
 end
